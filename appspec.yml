@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: /
-    destination: C:\inetpub\wwwroot\refdef
+  - source: \refdef.web
+    destination: C:\inetpub\wwwroot
     overwrite: yes
 hooks:
   AfterInstall:
