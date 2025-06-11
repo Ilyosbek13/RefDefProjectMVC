@@ -1,0 +1,13 @@
+version: 0.0
+os: windows
+files:
+  - source: /
+    destination: C:\inetpub\wwwroot\refdef
+    overwrite: yes
+hooks:
+  AfterInstall:
+    - location: scripts/install.ps1
+      timeout: 180
+  ApplicationStart:
+    - location: scripts/applicationStart.ps1
+      timeout: 180
